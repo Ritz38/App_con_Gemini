@@ -11,7 +11,7 @@ def validar_email(email):
 
 def validar_telefono(telefono):
     # Adapta el patrón según el formato de teléfono deseado (ej: +5491112345678)
-    patron = r'^\+\d{11}$'
+    patron = r'^\+\d{10}$'
     return re.fullmatch(patron, telefono)
 
 def validar_fecha(fecha):
@@ -23,7 +23,7 @@ def validar_fecha(fecha):
 st.title("Formulario de Validación")
 st.write("Pagina desarrollada por: Juan Pablo Zuluaga Mesa")
 
-nombre = st.text_input("Ingrese su nombre:")
+nombre = st.text_input("Ingrese su primer nombre:")
 email = st.text_input("Ingrese su dirección de correo electrónico:")
 telefono = st.text_input("Ingrese su número de teléfono:")
 fecha = st.text_input("Ingrese una fecha (DD/MM/AAAA):")
