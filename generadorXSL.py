@@ -47,7 +47,7 @@ def procesar_csv(url):
 # Interfaz de usuario de Streamlit
 st.title("Procesador de CSV con Regex")
 
-url = "https://github.com/gabrielawad/programacion-para-ingenieria/blob/main/archivos-datos/regex/regex_productos.csv"
+url = "https://raw.githubusercontent.com/gabrielawad/programacion-para-ingenieria/refs/heads/main/archivos-datos/regex/regex_productos.csv"
 if st.button("Procesar CSV"):
     procesar_csv(url)
     st.success("¡Archivo Excel generado exitosamente!")
