@@ -37,5 +37,5 @@ if st.button("Validar"):
         st.error("El número de teléfono no es válido.")
     if not validar_fecha(fecha):
         st.error("El formato de fecha no es válido.")
-    else:
+    if validar_nombre(nombre) and validar_email(email) and validar_telefono(telefono) and validar_fecha(fecha):
         st.success("¡Todos los datos son válidos!")
