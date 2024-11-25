@@ -11,7 +11,7 @@ def validar_email(email):
 
 def validar_telefono(telefono):
     # Adapta el patrón según el formato de teléfono deseado (ej: +5491112345678)
-    patron = r'^\+\d{10}$'
+    patron = r'\d{10}'
     return re.fullmatch(patron, telefono)
 
 def validar_fecha(fecha):
